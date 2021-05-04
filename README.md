@@ -14,3 +14,4 @@ npm i netlify-identity-widget
 
 ### Links
 https://www.netlify.com/
+https://lins-gaming.netlify.app/
