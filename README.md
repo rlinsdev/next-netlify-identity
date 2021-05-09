@@ -11,7 +11,12 @@ To view the code for a specific lesson, select that lesson from the branch dropd
 
 ### Packages
 npm i netlify-identity-widget
+npm i netlify-cli -g
 
 ### Links
 https://www.netlify.com/
 https://lins-gaming.netlify.app/
+
+### Localhost - function
+To run: netlify dev
+https://lins-gaming.netlify.app/.netlify/functions/supermario
