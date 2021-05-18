@@ -5,8 +5,14 @@ exports.handler = async (event, context) => {
     { title: 'Ultimate street fighter Guide', author: 'Chun-li' }
   ]
 
+  if (context.clientContext.user) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify(guides)
+    }
+  }
   return {
-    statusCode: 200,
-    body: JSON.stringify(guides)
+    statusCode: 401,
+    body: JSON.stringify({ mssg: 'you must be logged' })
   }
 }
